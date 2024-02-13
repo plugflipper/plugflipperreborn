@@ -1,0 +1,72 @@
+header{
+
+    width: 100%;
+    left: -0px;
+}
+.header-content ul{
+    display: flex;
+     background-color: #242424;
+     font-size: 18px;
+     height: 60px;
+     align-items: center;
+     justify-content: center;
+
+
+}
+.header-content ul li{
+    margin-right: 50px;
+
+}
+
+ul.menu a{
+    text-decoration: none;
+     color: white;
+     font-family: 'Roboto', sans-serif;
+
+    }
+body{
+color: black;
+
+
+}
+.body-content{
+display: flex;
+justify-content: space-evenly;
+align-items: baseline;
+
+}
+main{
+
+    color: rgb(0, 0, 0);
+}
+.main-content{
+
+display: flex;
+justify-content: space-evenly;
+align-items: baseline;
+white-space: nowrap;
+
+
+}
+#text{
+    width: 613px;
+}
+.characters{
+    display: flex;
+}
+#tshirt{
+position: relative;
+
+}
+#tshirt img{
+    position: absolute;
+}
+#ts{
+    top: 0;
+    left: 0;
+
+}
+#pers{
+    top: 200px;
+    left: 200px;
+}

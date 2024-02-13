@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPINGCART.</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../basket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./Magneto.ttf" rel="stylesheet">
+    <div class="shopping-cart">
+     <div class="title">
+          Корзина
+        </div>
+   <!-- Товар #1 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+   
+          <div class="image">
+            <img src="" alt="" />
+          </div>
+   
+          <div class="description">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+   
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+   
+          <div class="total-price">1500</div>
+        </div>
+   
+    <!-- Товар #2 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+   
+          <div class="image">
+            <img src="" alt=""/> 
+          </div>
+   
+          <div class="description">
+            <span>T-shirt</span>
+            <span>Future Tee Black</span>
+          </div>
+   
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+   
+          <div class="total-price">1500</div>
+        </div>
+   
+    <!-- Товар #3 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+   
+          <div class="image">
+            <img src="" alt="" />
+          </div>
+   
+          <div class="description">
+            <span></span>
+            <span>Future Tee Black</span>
+          </div>
+   
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+   
+          <div class="total-price">1500</div>
+        </div>
+      </div>
+    </div>
+ <script type="text/javascript">
+        $('.minus-btn').on('click', function(e) {
+              e.preventDefault();
+              var $this = $(this);
+              var $input = $this.closest('div').find('input');
+              var value = parseInt($input.val());
+  
+              if (value > 1) {
+                  value = value - 1;
+              } else {
+                  value = 0;
+              }
+  
+          $input.val(value);
+  
+          });
+  
+          $('.plus-btn').on('click', function(e) {
+              e.preventDefault();
+              var $this = $(this);
+              var $input = $this.closest('div').find('input');
+              var value = parseInt($input.val());
+  
+              if (value < 100) {
+                value = value + 1;
+              } else {
+                  value =100;
+              }
+  
+              $input.val(value);
+          });
+  
+        $('.like-btn').on('click', function() {
+          $(this).toggleClass('is-active');
+        });
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

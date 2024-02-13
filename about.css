@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'urbanoutline.ttf';
+    src: url('urbanoutline.ttf');}
+
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color:#7C9AC0	;
+    width: 100%;}
+body {
+    margin: 0;
+    height: 20px;
+    background-color: rgb(255, 0, 0)
+     'Roboto', sans-serif;
+    }
+.parent {
+    height: 100px;
+    position: relative;
+    border: 2px solid rgb(96, 96, 96);
+  }
+  
+.child {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0;
+  }
+h1 {
+    font-size: 5em;
+    letter-spacing: 8px;
+    color: #7C9AC0	;
+    font-family:'urbanoutline.ttf';
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 5px;}
+    a {
+        text-decoration: none;
+        color: #163154}
+         .marquee-container{
+            display: flex;
+            align-items: center;
+            background-color: #376baab0		;
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;}
+    .parent {
+      display: flex;
+      justify-content: center;
+     border: 2px solid rgb(255, 255, 255);
+        font-weight: bold;       
+     }
+              
+    .child {
+                border: 2px solid rgb(255, 255, 255);
+              }
